@@ -1,0 +1,50 @@
+:host {
+  color: white;
+  background-color: #292b2e;
+  position: relative;
+}
+
+.container {
+  height: 100%;
+}
+
+.header {
+  position: static;
+  top: 0;
+  left: 0;
+  background-color: #292b2e;
+  width: 240px;
+  padding: 24px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 24px;
+}
+
+.body {
+  background-color: #292b2e;
+  overflow: auto;
+  padding-left: 24px;
+
+  .block {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    ul {
+      list-style-type: none;
+      padding-inline-start: 0px;
+      cursor: pointer;
+    }
+  }
+}
+
+.footer {
+  position: static;
+  bottom: 0;
+  left: 0;
+  background-color: #292b2e;
+  width: 240px;
+  padding: 24px;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-top: 1px solid white;
+}

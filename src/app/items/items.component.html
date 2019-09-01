@@ -1,0 +1,25 @@
+<div class="container" fxLayout="column">
+  <div class="header" fxFlex="24px" fxLayout="row" fxLayoutAlign="start center">
+    <div>TOOLBAR</div>
+  </div>
+
+  <div class="body" fxFlex="100%">
+    <div class="block" fxLayout="column">
+      <ul class="items">
+        <li *ngFor="let item of items" (click)="select(item)">
+          <h4>
+            {{ item.title }}
+          </h4>
+          <div class="description">{{ item.description }}</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer" fxFlex="24px" fxLayout="row" fxLayoutAlign="start center">
+    <div fxLayout="row">
+      <mat-icon>search</mat-icon>
+      <input placeholder="SEARCH" fxFlex="100%" />
+    </div>
+  </div>
+</div>

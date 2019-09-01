@@ -1,0 +1,9 @@
+.main-container {
+  height: 100vh;
+  overflow: hidden;
+
+  .collections {
+    height: 100vh;
+    overflow: scroll;
+  }
+}

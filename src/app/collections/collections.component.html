@@ -1,0 +1,27 @@
+<div class="container" fxLayout="column">
+  <div class="header" fxFlex="24px"  fxLayout="row" fxLayoutAlign="start center">
+    <div>BLANK</div>
+  </div>
+
+  <div class="body" fxFlex="100%">
+    <div class="block" fxLayout="column">
+      <div>COLLECTIONS</div>
+
+      <ul class="items">
+        <li *ngFor="let collection of collections" (click)="select(collection)">
+          <div fxLayout="row">
+            <mat-icon>library_books</mat-icon>
+            <span>{{ collection.name }}</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer" fxFlex="24px"  fxLayout="row" fxLayoutAlign="start center">
+    <div fxLayout="row">
+      <mat-icon>library_add</mat-icon>
+      <span>NEW COLLECTION</span>
+    </div>
+  </div>
+</div>
