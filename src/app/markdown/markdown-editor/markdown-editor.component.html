@@ -1,0 +1,21 @@
+<div class="container" fxLayout="column">
+  <div class="header" fxFlex="24px" fxLayout="row" fxLayoutAlign="start center">
+    <button mat-icon-button><mat-icon>format_bold</mat-icon></button>
+    <button mat-icon-button><mat-icon>format_italic</mat-icon></button>
+    <button mat-icon-button><mat-icon>format_strikethrough</mat-icon></button>
+    <button mat-icon-button><mat-icon>format_list_bulleted</mat-icon></button>
+    <button mat-icon-button><mat-icon>format_list_numbered</mat-icon></button>
+    <button mat-icon-button><mat-icon>check_box</mat-icon></button>
+    <button mat-icon-button><mat-icon>attach_file</mat-icon></button>
+    <button mat-icon-button><mat-icon>format_quote</mat-icon></button>
+    <button mat-icon-button><mat-icon>code</mat-icon></button>
+  </div>
+
+  <div class="editor" fxFlex="calc((100vh - 24px) / 2)">
+    {{ content }}
+  </div>
+
+  <div class="preview"  fxFlex="calc((100vh - 24px) / 2)">
+
+  </div>
+</div>

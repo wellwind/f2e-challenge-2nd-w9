@@ -10,11 +10,20 @@ import { AppComponent } from './app.component';
 import { CollectionsComponent } from './collections/collections.component';
 import { ContentComponent } from './content/content.component';
 import { ItemsComponent } from './items/items.component';
-
+import { MarkdownModule } from './markdown/markdown.module';
 
 @NgModule({
   declarations: [AppComponent, CollectionsComponent, ItemsComponent, ContentComponent],
-  imports: [BrowserModule, HttpClientModule, AppRoutingModule, BrowserAnimationsModule, FlexLayoutModule, MatIconModule, MatButtonModule],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FlexLayoutModule,
+    MatIconModule,
+    MatButtonModule,
+    MarkdownModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
