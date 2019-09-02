@@ -29,15 +29,31 @@
       li {
         height: 120px;
         border-bottom: 1px solid #dddddd;
+        border-left: 4px solid transparent;
+        &.selected {
+          border-left: 4px solid #32a310;
+        }
         h4 {
           font-size: 24px;
           font-style: bold;
-          margin: 24px 24px 0px 24px
+          padding-top: 12px;
+          margin: 0px 24px 0px 24px;
+
+          width: 360px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
         }
         div.description {
           margin: 0px 24px 24px 24px;
           font-size: 16px;
           color: #999;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          width: 360px;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
       }
     }

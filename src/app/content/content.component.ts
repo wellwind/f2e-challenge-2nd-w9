@@ -12,4 +12,8 @@ export class ContentComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  save(content: string) {
+    console.log(JSON.stringify(content));
+  }
 }

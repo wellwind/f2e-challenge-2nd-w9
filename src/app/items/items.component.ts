@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, OnInit, Output } from '@angular/core';
 import { Item } from '../collections';
 
 @Component({
@@ -6,9 +6,11 @@ import { Item } from '../collections';
   templateUrl: './items.component.html',
   styleUrls: ['./items.component.scss']
 })
-export class ItemsComponent implements OnInit {
+export class ItemsComponent implements OnInit, OnChanges {
   @Input() items: Item[];
   @Output() itemSelected = new EventEmitter<Item>();
+
+  selectedItem = null;
 
   constructor() {}
 
@@ -22,6 +24,7 @@ export class ItemsComponent implements OnInit {
 
   select(item: Item) {
     console.log(item);
+    this.selectedItem = item;
     this.itemSelected.emit(item);
   }
 }

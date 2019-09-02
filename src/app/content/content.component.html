@@ -1,8 +1,7 @@
 <div class="content">
-  <!-- {{ item?.content }} -->
-  <app-markdown-editor></app-markdown-editor>
+  <app-markdown-editor *ngIf="item" [(content)]="item.content"></app-markdown-editor>
 </div>
 
 <div class="save-button">
-  <button mat-fab color="primary"><mat-icon>save</mat-icon></button>
+  <button mat-fab color="primary" (click)="save(item.content)"><mat-icon>save</mat-icon></button>
 </div>

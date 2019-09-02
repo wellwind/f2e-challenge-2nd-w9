@@ -6,11 +6,11 @@
   <div class="body" fxFlex="100%">
     <div class="block" fxLayout="column">
       <ul class="items">
-        <li *ngFor="let item of items" (click)="select(item)">
+        <li *ngFor="let item of items" (click)="select(item)" [class.selected]="item.id === selectedItem.id">
           <h4>
             {{ item.title }}
           </h4>
-          <div class="description">{{ item.description }}</div>
+          <div class="description">{{ item.content?.substring(0, 100) }}</div>
         </li>
       </ul>
     </div>

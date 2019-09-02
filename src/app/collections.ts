@@ -4,7 +4,7 @@ export interface Collection {
 }
 
 export interface Item {
+  id: number;
   title: string;
-  description: string;
   content: string;
 }
