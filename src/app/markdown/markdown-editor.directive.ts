@@ -28,7 +28,8 @@ export class MarkdownEditorDirective implements AfterViewInit {
       this.editor = new SimpleMDE({
         element: this.elementRef.nativeElement,
         toolbar: false,
-        status: false
+        status: false,
+        spellChecker: false
       });
 
       this.control.valueChanges.subscribe(data => {
