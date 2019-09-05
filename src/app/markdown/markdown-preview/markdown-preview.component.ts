@@ -1,5 +1,5 @@
 import { Component, Input, OnChanges, OnInit } from '@angular/core';
-import { MarkdownParserService } from '../../markdown-parser.service';
+import { MarkdownParserService } from '../markdown-parser.service';
 
 @Component({
   selector: 'app-markdown-preview',
