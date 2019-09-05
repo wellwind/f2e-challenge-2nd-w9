@@ -1,4 +1,4 @@
-import { AfterViewInit, Directive, ElementRef } from '@angular/core';
+import { AfterViewInit, Directive, ElementRef, HostBinding } from '@angular/core';
 import { NgControl } from '@angular/forms';
 import { forkJoin } from 'rxjs';
 import { ExternalResourceService } from './external-resource.service';
@@ -16,6 +16,9 @@ declare class SimpleMDE {
   exportAs: 'markdownEditor'
 })
 export class MarkdownEditorDirective implements AfterViewInit {
+
+  @HostBinding('style.display') display = 'none';
+
   editor: SimpleMDE;
 
   constructor(private elementRef: ElementRef, private control: NgControl, private externalResourceService: ExternalResourceService) {}
