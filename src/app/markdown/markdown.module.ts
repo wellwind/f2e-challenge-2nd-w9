@@ -6,11 +6,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MarkdownEditorDirective } from './markdown-editor.directive';
 import { MarkdownEditorComponent } from './markdown-editor/markdown-editor.component';
+import { MarkdownPreviewComponent } from './markdown-preview/markdown-preview.component';
 
 
 
 @NgModule({
-  declarations: [MarkdownEditorComponent, MarkdownEditorDirective],
+  declarations: [MarkdownEditorComponent, MarkdownEditorDirective, MarkdownPreviewComponent],
   imports: [
     CommonModule,
     FlexLayoutModule,
