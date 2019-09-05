@@ -27,7 +27,7 @@
       list-style-type: none;
       cursor: pointer;
       li {
-        height: 120px;
+        height: 116px;
         border-bottom: 1px solid #dddddd;
         border-left: 4px solid transparent;
         &.selected {
@@ -39,7 +39,7 @@
           padding-top: 12px;
           margin: 0px 24px 0px 24px;
 
-          width: 360px;
+          width: 350px;
           overflow: hidden;
           white-space: nowrap;
           text-overflow: ellipsis;
@@ -51,7 +51,7 @@
           display: -webkit-box;
           -webkit-line-clamp: 3;
           -webkit-box-orient: vertical;
-          width: 360px;
+          width: 350px;
           overflow: hidden;
           text-overflow: ellipsis;
         }
