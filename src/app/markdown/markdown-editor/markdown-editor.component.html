@@ -11,11 +11,15 @@
     <button mat-icon-button (click)="sendCommand(MarkdownCommand.ToggleCodeBlock)"><mat-icon>code</mat-icon></button>
   </div>
 
-  <div class="editor" fxFlex="calc((100vh - 24px) / 2)">
+  <div class="hint" fxFlex="24px">Editor</div>
+
+  <div class="editor" fxFlex="calc((100vh - 49px) / 2)">
     <textarea appMarkdownEditor [(ngModel)]="content" (ngModelChange)="contentChange.emit($event)" #editor="markdownEditor"></textarea>
   </div>
 
-  <div class="preview"  fxFlex="calc((100vh - 24px) / 2)">
+  <div class="hint" fxFlex="24px">Preview</div>
+
+  <div class="preview" fxFlex="calc((100vh - 49px) / 2 - 50px)">
     <app-markdown-preview [content]="content"></app-markdown-preview>
   </div>
 </div>
